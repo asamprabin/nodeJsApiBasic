@@ -21,10 +21,6 @@ app.use(cors())
 // support parsing of application/json type post data
 app.use(bodyParser.json());
 
-//initialize passport
-app.use(passport.initialize());
-app.use(passport.session());
-
 // Routes
 app.get('/',(req, res) => res.send('Hello World'));
 // /Routes
